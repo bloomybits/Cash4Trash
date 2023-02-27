@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --bg-body: rgb(255, 255, 255);
+    --color-font: rgb(194, 108, 37);
+    --color-card: rgb(64, 128, 106);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-body);
+}
+
+p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 73px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.login img{
+    height: 28px;
+    margin-top: 25px;
+    margin-right: 33px;
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    margin-top: 75px;
+}
+
+.section-1 h2{
+    flex-direction: column;
+    color: #F4743B;
+    font-weight: bolder;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 185px;
+    padding-right: 185px;
+}
+.cards a{
+    text-decoration: none;
+}
+
+.card:hover{
+    background-color: #4B7E7D;
+    color: white;
+    cursor:pointer;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-color: var(--color-card);
+    width: 110px;
+    height: 95px;
+    border-radius: 12px;
+    font-weight: bolder;
+    color: #4B7E7D;
+}
+
+.card:not(last-child){
+    margin-right: 20px;
+}
+
+.card img{
+    width: 33px;
+}
+
+.container-fluid{
+    width: 75%;
+}

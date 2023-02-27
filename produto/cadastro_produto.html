@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>Anunciar</title>
+</head>
+<body>
+    <!--HEADER COM LOGO-->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+            <img src="img/logo.jpg">
+        </a>
+        </div>
+    </header>
+
+    <!--INPUT FILE-->
+    <div class="input_file">
+        <label class="picture" for="picture__input" tabindex="0">
+            <span class="picture__image"></span>
+        </label>
+        <input type="file" accept="image/*" name="picture__input" id="picture__input">
+        <script src="main.js"></script>
+    </div>
+
+    <div class="form-box">
+        <h2>Cadastrar produto</h2>
+        <p>Preencha os dados abaixo do produto que deseja anunciar.</p>
+        <form action="#">
+            <div class="input-group">
+                <label for="nome"></label>
+                <input type="text" id="nome" placeholder="Nome do produto" required>
+            </div>
+
+            <div class="input-group">
+                <label for="desc"></label>
+                <input type="text" id="desc" placeholder="Descrição" required>
+            </div>
+
+            <div class="input-group">
+                <label for="coleta"></label>
+                <input type="text" id="coleta" placeholder="Escolha o ponto de coleta para levar seu produto" required>
+            </div>
+
+            <div class="input-group">
+                <label for="categoria"></label>
+                <input type="text" id="categoria" placeholder="Selecione a categoria do seu e-lixo" required>
+            </div>
+
+            <div class="input-group">
+                <button>Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
